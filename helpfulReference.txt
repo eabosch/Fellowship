@@ -1,0 +1,41 @@
+	public Transform door1Gizmo;
+	public Transform door2Gizmo;
+	public Transform door3Gizmo;
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+
+		//DOORS
+
+	
+		if (other.gameObject.tag == "Door1") {
+			inDoor = true;
+			doorHighlight1.SetActive (true);
+			//myAnimator.SetTrigger ("goInside");
+		}
+
+	
+
+public IEnumerator DoorAnim(Vector3 pos){
+
+		Vector3 newPos = new Vector3 (pos.x, pos.y, thePlayer.transform.position.z);
+		yield return new WaitForSeconds (1.75f);
+		thePlayer.transform.position = newPos;
+		myAnimator.SetTrigger ("stopGoInside");
+	}
+
+void Update()
+	{
+		volumeControl (currentChannel);
+		if (Input.GetKeyDown ("space")) {
+			if (inDoor) {
+				Debug.Log ("Going up!");
+
+
+				//Vector3 temp = new Vector3 (-126.1f, -46.6f, -6.031f);
+
+				//	Vector3 door1Postition = door1Gizmo.transform.position;
+				myAnimator.SetTrigger("goInside");
+				StartCoroutine (DoorAnim(door1Gizmo.transform.position));
+				//thePlayer.transform.position = door1Gizmo.transform.position;
+			}
