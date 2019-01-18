@@ -23,6 +23,11 @@ public IEnumerator DoorAnim(Vector3 pos){
 		thePlayer.transform.position = newPos;
 		myAnimator.SetTrigger ("stopGoInside");
 	}
+void FixedUpdate() 
+	{
+		float horizontal = Input.GetAxis ("Horizontal");
+		handleMovement (horizontal);
+	}
 
 void Update()
 	{
