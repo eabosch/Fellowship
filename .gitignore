@@ -35,6 +35,7 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -54,3 +55,4 @@ Idyll/.vs/Idyll/v15/.suo
 Idyll/.vs/Idyll/v15/.suo
 Idyll/.vs/Idyll/v15/Server/sqlite3/db.lock
 Idyll/.vs/Idyll/v15/Server/sqlite3/storage.ide
+.vs/
