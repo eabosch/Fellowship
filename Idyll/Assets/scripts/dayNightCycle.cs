@@ -24,6 +24,7 @@ public class dayNightCycle : MonoBehaviour
 		
 		if (total_time >=0 && total_time <= 720 ){ //total_time >=0 && total_time <= 1
 			RG -= 0.00002778f; // 0.02f
+            
 		} 
 		
 		if (total_time > 720 && total_time <= 1440){ //total_time > 1 && total_time <= 2

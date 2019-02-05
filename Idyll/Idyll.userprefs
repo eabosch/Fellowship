@@ -1,8 +1,9 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Player.cs">
+﻿<Properties StartupItem="Unity.TextMeshPro.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\LevelControl.cs">
     <Files>
-      <File FileName="Assets\scripts\Player.cs" Line="31" Column="1" />
+      <File FileName="Assets\scripts\Player.cs" Line="22" Column="22" />
+      <File FileName="Assets\scripts\LevelControl.cs" Line="25" Column="54" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
