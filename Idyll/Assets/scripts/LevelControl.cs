@@ -18,11 +18,11 @@ public class LevelControl : MonoBehaviour
 
 	}
 
-	void OnTriggerEnter(Collider2D other)
+	/*void OnTriggerEnter(Collider2D other)
 	{
 		if (other.CompareTag ("Player")) 
 		{
 			UnityEngine.SceneManagement.SceneManager.LoadScene(levelname);
 		}
-	}
+	}*/
 }
