@@ -636,10 +636,11 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\dayNightCycle.cs" />
     <Compile Include="Assets\scripts\GameController.cs" />
-    <Compile Include="Assets\scripts\Harvest\harvestScript.cs" />
-    <Compile Include="Assets\scripts\Harvest\plantControl.cs" />
-    <Compile Include="Assets\scripts\Harvest\tools.cs" />
     <Compile Include="Assets\scripts\LevelControl.cs" />
+    <Compile Include="Assets\scripts\MonoBehaviors\Player\playerMovement.cs" />
+    <Compile Include="Assets\scripts\Plant+Harvest\harvestScript.cs" />
+    <Compile Include="Assets\scripts\Plant+Harvest\plantControl.cs" />
+    <Compile Include="Assets\scripts\Plant+Harvest\tools.cs" />
     <Compile Include="Assets\scripts\Player.cs" />
   </ItemGroup>
   <ItemGroup>
