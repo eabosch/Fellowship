@@ -5,7 +5,7 @@ using UnityEngine;
 public class tools : MonoBehaviour
 {
 	// add a cursor to highlight selected tool object 
-	public Transform cursorObj;
+	//public Transform cursorObj;
 
     void Start()
     {
@@ -32,7 +32,7 @@ public class tools : MonoBehaviour
 		}
 		
 		// transform.position refers to whatever the script is attached to
-		cursorObj.transform.position = transform.position;  
+		//cursorObj.transform.position = transform.position;  
 		
 		// CHANGE THIS, SPECIFY TOOL NAME (matching to the string)
 		Debug.Log(harvestScript.currentTool);
