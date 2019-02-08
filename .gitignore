@@ -58,3 +58,6 @@ Idyll/sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.meta
+*.log
+*.log
