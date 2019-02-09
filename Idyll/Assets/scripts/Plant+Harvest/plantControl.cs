@@ -7,6 +7,9 @@ public class plantControl : MonoBehaviour
     public Sprite noPlantObj;
     public Sprite sprout;
 
+    //[SerializeField] public GameObject plantedPrefab;
+    //public GameObject _planted;
+    
     public Sprite planted;
     // apple
     public Sprite apple_1;
@@ -21,17 +24,20 @@ public class plantControl : MonoBehaviour
     public Sprite grape_2;
 
     // parsnip
-    public Sprite parsnip_1;
+    //public Sprite parsnip_1;
+    [SerializeField] public GameObject parsnip1Prefab;
+    public GameObject _parsnip1;
     public Sprite parsnip_2;
-
+    
     //artichoke
     public Sprite artichoke_1;
     public Sprite artichoke_2;
 
 
     public float growTime = 0;
-    public float parsnipScale = 0;
-
+    //public float plant_pos_x =-7;
+    //public double plant_pos_y = -2.5;
+    //public float plant_pos_z = 0;
     //
     public Transform plotObj;
     public string watered = "n";
@@ -47,7 +53,7 @@ public class plantControl : MonoBehaviour
     void Update()
     {
 
-
+       
 
 
 
@@ -57,10 +63,20 @@ public class plantControl : MonoBehaviour
 		if (GetComponent<SpriteRenderer>().sprite == planted){
 			growTime += Time.deltaTime;
 		}
+        
+       /*
+        if (GetComponent<GameObject>() == plantedPrefab)
+        {
+            growTime += Time.deltaTime;
+        }
+        */
 
         if (growTime > 5)
         {
-            GetComponent<SpriteRenderer>().sprite = parsnip_1;
+            _parsnip1 = Instantiate(parsnip1Prefab) as GameObject;
+            _parsnip1.transform.position = new Vector3(-7, -3, 0);
+      
+            //GetComponent<SpriteRenderer>().sprite = parsnip_1;
 
             //GetComponent<plantControl>().GetComponent <SpriteRenderer>().parsnip_1.transform.scale = 
 
@@ -110,7 +126,7 @@ public class plantControl : MonoBehaviour
         if ((harvestScript.currentTool == "seeds")) //&& (GetComponent<SpriteRenderer>().sprite == noPlantObj))
         {
             GetComponent<SpriteRenderer>().sprite = planted;
-
+            //_planted = Instantiate(plantedPrefab) as GameObject;
         }
 
         if (harvestScript.currentTool == "bucket")
